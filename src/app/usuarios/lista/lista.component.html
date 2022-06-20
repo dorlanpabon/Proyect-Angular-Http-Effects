@@ -1,1 +1,20 @@
-<p>lista works!</p>
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+    <div class="col" *ngFor="let usuario of usuarios">
+        <div class="card h-100">
+            <img src="{{usuario.avatar}}" class="card-img-top" alt="{{usuario.avatar}}">
+            <div class="card-body">
+                <h5 class="card-title">{{usuario.first_name}} {{usuario.last_name}}</h5>
+                <p class="card-text">{{usuario.email}}</p>
+                <p class="card-text">
+                    <span class="text-muted">
+                        <i class="fas fa-circle"></i>
+                        ID: {{usuario.id}}
+                    </span>
+                </p>
+            </div>
+            <!-- <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div> -->
+        </div>
+    </div>
+</div>
