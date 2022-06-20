@@ -18,7 +18,8 @@ import { UsuarioComponent } from './usuarios/usuario/usuario.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule //rutas
   ],
   providers: [],
   bootstrap: [AppComponent]
